@@ -9,6 +9,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.gamecodeschool.roomdatabase.Database.UserDao;
+import com.gamecodeschool.roomdatabase.Database.UserDatabase;
+import com.gamecodeschool.roomdatabase.Database.UserEntity;
+
 public class Login extends AppCompatActivity {
 
     EditText userId,password;

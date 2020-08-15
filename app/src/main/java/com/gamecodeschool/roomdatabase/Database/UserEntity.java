@@ -1,4 +1,4 @@
-package com.gamecodeschool.roomdatabase;
+package com.gamecodeschool.roomdatabase.Database;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
@@ -17,6 +17,7 @@ public class UserEntity {
     String password;
 
     @ColumnInfo(name = "name")
+    public
     String name;
 
 

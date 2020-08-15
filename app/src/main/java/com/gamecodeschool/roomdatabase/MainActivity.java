@@ -9,6 +9,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.gamecodeschool.roomdatabase.Database.UserDao;
+import com.gamecodeschool.roomdatabase.Database.UserDatabase;
+import com.gamecodeschool.roomdatabase.Database.UserEntity;
+
 public class MainActivity extends AppCompatActivity {
 
     EditText userId,password,name;
@@ -41,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
                     new Thread(new Runnable() {
                         @Override
                         public void run() {
+                            //delete previous records
+                            userDao.deleteAll();
                             //Register User
                             userDao.registerUser(userEntity);
                             runOnUiThread(new Runnable() {

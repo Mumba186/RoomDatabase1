@@ -1,4 +1,4 @@
-package com.gamecodeschool.roomdatabase;
+package com.gamecodeschool.roomdatabase.Database;
 
 import android.content.Context;
 
